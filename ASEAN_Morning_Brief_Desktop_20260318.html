@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASEAN Morning Brief — 2026/3/18</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=DM+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans JP',sans-serif;background:#edecea;color:#1d1d1f;line-height:1.7;font-size:13px}
+.wrap{max-width:1100px;margin:0 auto;background:#fff;box-shadow:0 0 40px rgba(0,0,0,0.06)}
+.hdr{background:linear-gradient(135deg,#1A2744 0%,#243656 60%,#2d4268 100%);color:#fff;padding:32px 40px 26px;position:relative;overflow:hidden}
+.hdr::before{content:'';position:absolute;right:-60px;top:-60px;width:300px;height:300px;border-radius:50%;background:rgba(197,165,114,0.05)}
+.hdr::after{content:'';position:absolute;right:60px;bottom:-40px;width:160px;height:160px;border-radius:50%;background:rgba(197,165,114,0.03)}
+.hdr-row{display:flex;justify-content:space-between;align-items:flex-start}
+.hdr-brand{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;opacity:0.4}
+.hdr-title{font-size:22px;font-weight:900;letter-spacing:-0.5px;margin-top:2px}
+.hdr-date{text-align:right}
+.hdr-date-big{font-size:42px;font-weight:300;letter-spacing:-2px;line-height:1;font-family:'Cormorant Garamond',serif}
+.hdr-date-sub{font-size:10px;opacity:0.4;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px}
+.hdr-strip{display:flex;align-items:center;gap:28px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08)}
+.hdr-vni{display:flex;align-items:baseline;gap:12px}
+.vni-label{font-size:9px;text-transform:uppercase;letter-spacing:1.5px;opacity:0.4}
+.vni-val{font-size:38px;font-weight:900;letter-spacing:-2px;font-family:'DM Mono',monospace}
+.vni-badge{display:inline-block;padding:4px 16px;border-radius:6px;font-weight:700;font-size:15px;font-family:'DM Mono',monospace;background:rgba(0,168,120,0.2);color:#86efac}
+.hdr-kpis{display:flex;gap:20px;margin-left:auto}
+.hkpi{text-align:right}
+.hkpi-label{font-size:8px;text-transform:uppercase;letter-spacing:1px;opacity:0.35}
+.hkpi-val{font-size:16px;font-weight:700;font-family:'DM Mono',monospace;letter-spacing:-0.5px}
+.hkpi-sub{font-size:9px;opacity:0.4}
+.hdr-tagline{margin-top:14px;font-size:12px;font-weight:500;color:rgba(255,255,255,0.85);background:rgba(255,255,255,0.06);padding:10px 16px;border-radius:8px;border-left:3px solid #C5A572;line-height:1.6}
+.content{padding:28px 40px 36px}
+.grid-2w{display:grid;grid-template-columns:3fr 2fr;gap:24px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.sec{margin-bottom:28px}
+.sec-title{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#9ca3af;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.sec-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#e5e7eb,transparent)}
+.insights{display:flex;flex-direction:column;gap:10px}
+.ins{display:flex;gap:14px;padding:14px 18px;border-radius:10px;background:#fff;border:1px solid #f0f0f0;transition:box-shadow 0.2s}
+.ins:hover{box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+.ins-bar{width:4px;border-radius:2px;flex-shrink:0}
+.ins-bar.red{background:#E94560}.ins-bar.green{background:#00A878}.ins-bar.blue{background:#3B82F6}.ins-bar.amber{background:#F59E0B}
+.ins-icon{font-size:20px;flex-shrink:0;width:28px;text-align:center;line-height:1.6}
+.ins-body{flex:1}
+.ins-head{font-size:12px;font-weight:700;color:#1d1d1f;margin-bottom:3px}
+.ins-text{font-size:11px;color:#4b5563;line-height:1.65}
+.ins-tag{display:inline-block;font-size:8px;font-weight:700;padding:1px 6px;border-radius:3px;letter-spacing:0.5px;text-transform:uppercase;margin-left:6px;vertical-align:middle}
+.tag-obs{background:#e0e7ff;color:#3730a3}.tag-int{background:#f3e8ff;color:#7c3aed}
+.up{color:#00A878}.dn{color:#E94560}
+.watches{display:flex;flex-direction:column;gap:10px}
+.watch{display:flex;gap:12px;padding:14px 18px;border-radius:10px;background:#fffbeb;border:1px solid #fde68a}
+.watch-num{font-size:22px;font-weight:900;color:#b45309;font-family:'DM Mono',monospace;flex-shrink:0;width:30px;text-align:center;line-height:1.4}
+.watch-body{flex:1}
+.watch-head{font-size:12px;font-weight:700;color:#92400e;margin-bottom:3px}
+.watch-text{font-size:11px;color:#78350f;line-height:1.65}
+.spotlight{border:2px solid #1A2744;border-radius:12px;overflow:hidden}
+.spot-hdr{background:#1A2744;color:#fff;padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
+.spot-ticker{font-size:20px;font-weight:900;font-family:'DM Mono',monospace;letter-spacing:-0.5px}
+.spot-name{font-size:11px;opacity:0.6;margin-top:2px}
+.spot-ret{text-align:right}
+.spot-ret-val{font-size:18px;font-weight:700;font-family:'DM Mono',monospace}
+.spot-ret-sub{font-size:9px;opacity:0.5}
+.spot-body{padding:18px 20px}
+.spot-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.spot-chip{font-size:9px;font-weight:600;padding:3px 8px;border-radius:5px;background:#f0f4ff;color:#3730a3;letter-spacing:0.3px}
+.spot-story{font-size:12px;color:#374151;line-height:1.7;margin-bottom:14px}
+.spot-highlight{font-size:11px;color:#00492C;font-weight:500;padding:10px 14px;background:#f0fdf4;border-radius:8px;border-left:3px solid #00A878;line-height:1.6}
+.topic{border-radius:12px;border:1px solid #e5e7eb;overflow:hidden;transition:box-shadow 0.2s;background:#fff}
+.topic:hover{box-shadow:0 4px 20px rgba(0,0,0,0.05)}
+.topic-banner{padding:14px 18px}
+.topic-banner.tourism{background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border-bottom:1px solid #bbf7d0}
+.topic-banner.geo{background:linear-gradient(135deg,#fef2f2,#fff1f2);border-bottom:1px solid #fecaca}
+.topic-banner.reform{background:linear-gradient(135deg,#eff6ff,#eef2ff);border-bottom:1px solid #bfdbfe}
+.topic-cat{font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;opacity:0.6}
+.topic h3{font-size:14px;font-weight:700;line-height:1.4;color:#1d1d1f;margin-bottom:4px}
+.topic-body{padding:14px 18px}
+.topic-text{font-size:11px;color:#4b5563;line-height:1.65;margin-bottom:10px}
+.topic-data{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.topic-chip{font-size:9px;font-weight:600;padding:3px 8px;border-radius:5px;letter-spacing:0.3px}
+.chip-green{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0}
+.chip-red{background:#fef2f2;color:#991b1b;border:1px solid #fecaca}
+.chip-blue{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe}
+.topic-takeaway{font-size:10px;color:#00492C;font-weight:500;padding:8px 12px;background:#f0fdf4;border-radius:6px;line-height:1.6;border-left:3px solid #00A878}
+.regional{background:#f8f9fa;border-radius:12px;padding:18px 20px}
+.reg-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.reg-card{background:#fff;border-radius:8px;padding:14px 16px;border:1px solid #e5e7eb}
+.reg-idx{font-size:9px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.reg-val{font-size:20px;font-weight:700;font-family:'DM Mono',monospace;margin:2px 0}
+.reg-chg{font-size:13px;font-weight:600;font-family:'DM Mono',monospace}
+.reg-line{font-size:10px;color:#6b7280;margin-top:4px;line-height:1.55}
+.reg-flow{font-size:9px;color:#9ca3af;margin-top:3px}
+.cal{border-radius:10px;border:1px solid #e5e7eb;overflow:hidden}
+.cal-row{display:flex;border-bottom:1px solid #f0f0f0;font-size:11px}
+.cal-row:last-child{border:none}
+.cal-row.hdr-row{background:#1A2744;color:#fff;font-weight:600;font-size:10px;text-transform:uppercase;letter-spacing:0.8px}
+.cal-cell{flex:1;padding:10px 14px}
+.cal-cell:not(:last-child){border-right:1px solid #f0f0f0}
+.cal-row.hdr-row .cal-cell:not(:last-child){border-color:rgba(255,255,255,0.1)}
+.ftr{padding:18px 40px;border-top:1px solid #e5e7eb;font-size:9px;color:#9ca3af;text-align:center;line-height:1.6}
+.ftr-disc{margin-top:6px;font-size:8px;color:#c4c4c4}
+.divider{border:none;border-top:1px solid #f0f0f0;margin:4px 0 28px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hdr">
+  <div class="hdr-row">
+    <div>
+      <div style="font-size:16px;font-weight:700;letter-spacing:3px;opacity:0.9">CRI</div><div style="font-size:9px;letter-spacing:1.5px;opacity:0.4">Capital Research &amp; Investments</div>
+      <div class="hdr-title">ASEAN Morning Brief</div>
+    </div>
+    <div class="hdr-date">
+      <div class="hdr-date-big">3.18</div>
+      <div class="hdr-date-sub">Tuesday / March 2026</div>
+    </div>
+  </div>
+  <div class="hdr-strip">
+    <div class="hdr-vni">
+      <div>
+        <div class="vni-label">VN-Index 前日終値</div>
+        <div class="vni-val">1,710.29</div>
+      </div>
+      <div class="vni-badge">+1.01%</div>
+    </div>
+    <div class="hdr-kpis">
+      <div class="hkpi"><div class="hkpi-label">売買代金</div><div class="hkpi-val">27.6兆₫</div><div class="hkpi-sub">前日比やや増</div></div>
+      <div class="hkpi"><div class="hkpi-label">S&P 500</div><div class="hkpi-val" style="color:#86efac">6,716 <span style="font-size:11px">+0.25%</span></div></div>
+      <div class="hkpi"><div class="hkpi-label">Brent原油</div><div class="hkpi-val" style="color:#fca5a5">$103.42</div><div class="hkpi-sub">+3.2%</div></div>
+      <div class="hkpi"><div class="hkpi-label">VIX</div><div class="hkpi-val">23.5</div></div>
+    </div>
+  </div>
+  <div class="hdr-tagline">証券セクター急騰で1,700回復も、DGC経営陣起訴で石油化学が急落 — FOMC本日開始、Brent再び$103超</div>
+</div>
+
+<div class="content">
+
+<!-- ═══ ROW 1: Market + Watchpoints ═══ -->
+<div class="grid-2w">
+  <div class="sec" style="margin-bottom:0">
+    <div class="sec-title">昨日のマーケット（3/17 月曜）</div>
+    <div class="insights">
+      <div class="ins"><div class="ins-bar green"></div><div class="ins-icon">📈</div><div class="ins-body"><div class="ins-head">証券セクターが急騰 — VIX・TCXストップ高 <span class="ins-tag tag-obs">Observed</span></div><div class="ins-text">証券セクター全面高（+4%超）。VIX、TCXが値幅制限上限に張り付き、SSI、VCI、MBSも2〜4%上昇。FTSE格上げ中間レビュー（3月末予定）への期待に加え、デジタル資産取引所の開設観測が投機資金を呼び込んだ。</div></div></div>
+      <div class="ins"><div class="ins-bar green"></div><div class="ins-icon">🏦</div><div class="ins-body"><div class="ins-head">銀行セクターが下支え、大型銀行が揃って+1%超 <span class="ins-tag tag-obs">Observed</span></div><div class="ins-text">VCB、BID、CTG、MBB、VPB、TCBがいずれも+1%以上。前週暴落からのリバウンド局面で流動性の高い銀行株に資金が回帰。不動産も午前+2.3%と好調だったが、午後に利食い売りで上昇幅縮小。</div></div></div>
+      <div class="ins"><div class="ins-bar red"></div><div class="ins-icon">⚠️</div><div class="ins-body"><div class="ins-head">DGC経営陣起訴 → 場中ストップ安、石油化学に連鎖 <span class="ins-tag tag-obs">Observed</span></div><div class="ins-text">午前は小幅高で推移していたDGCが、起訴報道を受け午後に急落。1,260万株の売り注文でストップ安。同時にBSR、DPM、DCMも全てストップ安に。前週+13.9%の急騰から一転、ガバナンスリスクが顕在化。</div></div></div>
+      <div class="ins"><div class="ins-bar blue"></div><div class="ins-icon">🌐</div><div class="ins-body"><div class="ins-head">米国: S&P +0.25%、FOMC本日開始 <span class="ins-tag tag-obs">Observed</span></div><div class="ins-text">NVIDIAがGTC2026で次世代GPU「Vera Rubin」発表。デルタ航空が業績見通し上方修正。Brent $103超でも底堅い展開。据え置きコンセンサスだがドットプロットに注目。</div></div></div>
+    </div>
+  </div>
+
+  <div>
+    <div class="sec" style="margin-bottom:20px">
+      <div class="sec-title">本日の注目ポイント</div>
+      <div class="watches">
+        <div class="watch"><div class="watch-num">1</div><div class="watch-body"><div class="watch-head">FOMC結果発表（3/19 木 03:00 JST）</div><div class="watch-text">据え置き確実視だがドットプロットとパウエル記者会見に注目。原油$100超でインフレ見通し上方修正なら利下げ期待後退 → VND含む新興国通貨に下押し。</div></div></div>
+        <div class="watch"><div class="watch-num">2</div><div class="watch-body"><div class="watch-head">DGC起訴の波及 — 石油化学セクター</div><div class="watch-text">DGC→BSR→DPM→DCMに売り連鎖。本日寄り付きの同セクター動向が市場全体のセンチメントを左右。ファンド組入GAS（7.8%）への影響も注意。</div></div></div>
+        <div class="watch"><div class="watch-num">3</div><div class="watch-body"><div class="watch-head">ホルムズ海峡 — NATO護衛船団の行方</div><div class="watch-text">トランプ大統領がNATO同盟国の参加拒否を公表。護衛船団実現が遠のけばBrent $110超リスク。原油動向がASEAN市場全体の最大変数。</div></div></div>
+      </div>
+    </div>
+    <div class="sec" style="margin-bottom:0">
+      <div class="sec-title">Regional Pulse</div>
+      <div class="regional">
+        <div class="reg-grid">
+          <div class="reg-card"><div class="reg-idx">🇵🇭 PSEi</div><div class="reg-val">6,026</div><div class="reg-chg up">+0.32%</div><div class="reg-line">3日続落後の小反発。JG Summit +3.6%牽引。原油高インフレ懸念で上値抑制。</div><div class="reg-flow">外国人: 売越 ₱5.6億</div></div>
+          <div class="reg-card"><div class="reg-idx">🇮🇩 JCI/IHSG</div><div class="reg-val">~7,321</div><div class="reg-chg dn">-3.49%</div><div class="reg-line">大幅続落。IDR安+原油高の二重苦。銀行・消費が売り。BI利上げ観測浮上。</div><div class="reg-flow">外国人: 確認中</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ ROW 2: Spotlight + Topics ═══ -->
+<div class="grid-2">
+  <div class="sec" style="margin-bottom:0">
+    <div class="sec-title">銘柄スポットライト</div>
+    <div class="spotlight">
+      <div class="spot-hdr"><div><div class="spot-ticker">DGC</div><div class="spot-name">DucGiang Chemicals（ドゥックジャン化学）</div></div><div class="spot-ret"><div class="spot-ret-val" style="color:#fca5a5">ストップ安</div><div class="spot-ret-sub">終値 77,250 VND</div></div></div>
+      <div class="spot-body">
+        <div class="spot-meta"><span class="spot-chip">素材セクター</span><span class="spot-chip">HOSE上場</span><span class="spot-chip">リン化学国内最大手</span></div>
+        <div class="spot-story">前週は中東情勢を背景に+13.9%の急騰を見せたDGCが、3/17午後に経営陣の起訴報道を受けて急転直下のストップ安。1,260万株の大量売り注文が殺到し値幅制限下限に張り付いた。前2営業日もすでに下落基調にあり、売り圧力の蓄積が一気に顕在化。ベトナム最大のリン化学メーカーとして30カ国以上に輸出するが、ガバナンスリスクが急浮上した。</div>
+        <div class="spot-highlight"><strong>注目ポイント：</strong>起訴の範囲が事業継続にどこまで影響するかが焦点。機関投資家の対応（売却 or 静観）と、化学セクター（DPM、DCM）への波及を注視。BSRも前週+6.2%から一転ストップ安。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" style="margin-bottom:0">
+    <div class="sec-title">トピックス</div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+
+      <div class="topic"><div class="topic-banner tourism"><div class="topic-cat">観光・消費</div><h3>1-2月の外国人観光客470万人 (+18%) — 年間目標の19%を2ヶ月で達成</h3></div><div class="topic-body"><div class="topic-text">韓国が97万人でトップ、中国92万人が2位。インドが+71%の急成長で新興市場として台頭。欧州からも84.7万人（+67%）と大幅増。空路が全体の81.8%。年間目標2,500万人に対し順調な滑り出し。</div><div class="topic-data"><span class="topic-chip chip-green">🇰🇷 97万人 +10%</span><span class="topic-chip chip-green">🇮🇳 15.8万人 +71%</span><span class="topic-chip chip-green">🇪🇺 84.7万人 +67%</span></div><div class="topic-takeaway">投資視点: VPL（観光）、ACV（空港）、VJC（航空）が構造的追い風。前週VPL +6.4%はこの需要を先取り。</div></div></div>
+
+      <div class="topic"><div class="topic-banner geo"><div class="topic-cat">地政学・エネルギー</div><h3>ホルムズ海峡: NATO護衛船団の見通し後退、Brent $103超</h3></div><div class="topic-body"><div class="topic-text">トランプ大統領がNATO同盟国の護衛船団参加拒否を公表。通航量は2025年の日量138隻から激減。EIAは今後2ヶ月Brent $95超を予測、Q3以降$80以下を想定するが通航再開が前提。</div><div class="topic-data"><span class="topic-chip chip-red">Brent $103.42</span><span class="topic-chip chip-red">WTI $96.21</span><span class="topic-chip chip-blue">EIA: Q3 &lt;$80</span></div><div class="topic-takeaway">VNへの影響: GAS・PLXに直接影響。BSRは精製マージン改善も昨日DGC連鎖で下落。VND/USD圧力に注意。</div></div></div>
+
+      <div class="topic"><div class="topic-banner reform"><div class="topic-cat">市場改革</div><h3>FTSE中間レビュー（3月末）— 証券セクター急騰の背景</h3></div><div class="topic-body"><div class="topic-text">9月のEM格上げに向けた中間レビューを3月末に実施予定。28銘柄がFTSE GEIS候補。Circular 08発効でプレファンディング要件撤廃済み。格上げ確認でパッシブ$1.2-1.5B、アクティブ$6-10Bの流入が見込まれる。</div><div class="topic-data"><span class="topic-chip chip-blue">9月格上げ確定済</span><span class="topic-chip chip-blue">28銘柄候補</span><span class="topic-chip chip-green">パッシブ $1.2-1.5B</span></div><div class="topic-takeaway">VN-Index P/E ~13x、2026 EPS +16-18%予想。格上げは「if」ではなく「when」。中間レビュー成功が最終マイルストーン。</div></div></div>
+
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ ROW 3: Calendar ═══ -->
+<div class="sec">
+  <div class="sec-title">マクロカレンダー</div>
+  <div class="cal">
+    <div class="cal-row hdr-row"><div class="cal-cell">本日 3/18（火）</div><div class="cal-cell">明日 3/19（水）</div><div class="cal-cell">今週の注目</div></div>
+    <div class="cal-row">
+      <div class="cal-cell">FOMC会合 1日目<br>NVIDIA GTC 2026 継続<br>VN: DGC関連続報に注目</div>
+      <div class="cal-cell"><strong style="color:#E94560">FOMC結果発表 03:00 JST</strong><br>パウエル議長記者会見<br>ドットプロット更新</div>
+      <div class="cal-cell">FTSE中間レビュー（3月末目処）<br>ホルムズ海峡 護衛船団動向<br>VN: 外国人フロー、VND/USD<br>PH: BSP金利、PHP/USD</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="ftr">
+  Source: LSEG, VietStock, vietnam.vn, CNBC, Reuters, Yahoo Finance, Trading Economics, BusinessWorld, EIA<br>
+  CRI投資情報部 | Internal use only | 2026/3/18 08:00 JST generated
+  <div class="ftr-disc">当資料は社内参考資料であり、投資助言を構成するものではありません。データの正確性・完全性を保証するものではありません。</div>
+</div>
+
+</div>
+</body>
+</html>
